@@ -1,0 +1,42 @@
+body {
+    font-family: monospace;
+    margin: auto;
+    max-width: 72em;
+    padding: 1em;
+    background: #fefefe;
+}
+a {
+    color: #1168cc;
+}
+a:visited {
+    color: #828282;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li {
+    display: inline;
+}
+header nav ul li::before {
+    content: "[";
+}
+header nav ul li::after {
+    content: "]";
+}
+
+main nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+main nav ul li {
+    margin-bottom: 0.5em;
+}
+main nav ul li::before {
+    content: "\25B6";
+    color: orange;
+}
+

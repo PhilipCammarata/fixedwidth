@@ -1,0 +1,4 @@
+{{ $published := (time .Page.Date) -}}
+{{ $modified := (time .Page.Lastmod) -}}
+<span>Published <time datetime="{{ $published }}">{{ $published.Format "02-Jan-2006" }}</time>.{{ if $modified.After $published }} Updated <time datetime="{{ $modified }}">{{ $modified.Format "02-Jan-2006" }}</time>.{{ end }}</span>
+
